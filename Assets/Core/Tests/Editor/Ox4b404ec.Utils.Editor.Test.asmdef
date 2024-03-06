@@ -1,0 +1,18 @@
+{
+    "name": "Ox4b404ec.Utils.Editor.Test",
+    "rootNamespace": "Ox4b404ec.Utils.Editor.Test",
+    "references": [
+        "GUID:64c0cd43611f34485b4be727487483dc"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
