@@ -1,6 +1,6 @@
 {
-    "name": "Ox4b404ec.Utils.Editor.Test",
-    "rootNamespace": "Ox4b404ec.Utils.Editor.Test",
+    "name": "Ox4b404ec.Tools.Editor.Tests",
+    "rootNamespace": "Ox4b404ec.Tools.Editor.Tests",
     "references": [
         "GUID:64c0cd43611f34485b4be727487483dc"
     ],

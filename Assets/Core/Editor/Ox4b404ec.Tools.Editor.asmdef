@@ -1,6 +1,6 @@
 {
-    "name": "Ox4b404ec.Utils.Editor",
-    "rootNamespace": "Ox4b404ec.Utils.Editor",
+    "name": "Ox4b404ec.Tools.Editor",
+    "rootNamespace": "Ox4b404ec.Tools.Editor",
     "references": [
         "GUID:4c09c0de38a654ac985f4d29023cce5a"
     ],
