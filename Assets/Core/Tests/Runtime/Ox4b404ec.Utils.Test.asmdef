@@ -1,0 +1,16 @@
+{
+    "name": "Ox4b404ec.Utils.Test",
+    "rootNamespace": "Ox4b404ec.Utils.Test",
+    "references": [
+        "GUID:04be98f4130ad4e22afafceb7da440c0"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

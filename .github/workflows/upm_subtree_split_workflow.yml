@@ -1,0 +1,42 @@
+name: upm subtree split workflow   
+
+run-name: ${{ github.actor }} - upm workflow Start 🚀
+
+env:
+  UPM_BRANCH_NAME: upm
+  SEMVER_REG_EXP: "[0-9]+.[0-9]+.[0-9]+"
+  VERSION_JSON: 0
+  VERSION: 0
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches:
+      - master # 分支名称默认为main
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions: write-all
+
+jobs:
+  # Build job
+  create_npm_package:
+    runs-on: ubuntu-latest        
+    steps:            
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Make the script files executable
+        run: chmod +x ./.github/workflows/upm_subtree_split.sh
+      - name: Run upm_subtree_split.sh
+        run: |
+          echo "Run upm_subtree_split.sh"
+          ./.github/workflows/upm_subtree_split.sh        
+      # - name: run git push origin upm --tags
+      #   run: git push origin $UPM_BRANCH_NAME --tags
+
+    
+          
+    
+
+
