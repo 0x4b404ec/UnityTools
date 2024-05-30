@@ -24,5 +24,5 @@ jobs:
       - name: Publish Unity package
         uses: cdmvision/action-upm-publish@v1
         with: 
-          name: 'Core'
+          name: 'com.0x4b404ec.toolkit'
           upmBranch: 'upm'
