@@ -7,10 +7,9 @@ VERSION=$(echo $VERSION_JSON | grep -Eo $SEMVER_REG_EXP)
 echo $VERSION
 echo "==============================================================="
 
-
-git fetch origin
-
 git branch -r
+
+git fetch origin $UPM_BRANCH_NAME:$UPM_BRANCH_NAME
 
 git push origin --delete $VERSION
 
