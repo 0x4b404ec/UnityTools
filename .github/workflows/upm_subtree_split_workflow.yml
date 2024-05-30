@@ -11,18 +11,17 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  deploy:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      
-      - name: Publish Unity package
-        uses: cdmvision/action-upm-publish@v1
-        with: 
-          name: 'com.0x4b404ec.toolkit'
-          upmBranch: 'upm'
+  # Build job
+  create_npm_package:
+    runs-on: ubuntu-latest        
+    steps:            
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Make the script files executable
+        run: chmod +x ./.github/workflows/upm_subtree_split.sh
+      - name: Run upm_subtree_split.sh
+        run: |
+          echo "Run upm_subtree_split.sh"
+          ./.github/workflows/upm_subtree_split.sh        
+      # - name: run git push origin upm --tags
+      #   run: git push origin $UPM_BRANCH_NAME --tags
