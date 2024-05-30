@@ -2,7 +2,9 @@
 
 name: Update Unity UPM semantic versioning
 
-on: [push]
+on:
+  push:
+    branches: [ master ]
 
 jobs:
   create:
