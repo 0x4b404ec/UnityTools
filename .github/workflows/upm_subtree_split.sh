@@ -8,8 +8,8 @@ echo $VERSION
 echo "==============================================================="
 
 
-git checkout - a $UPM_BRANCH_NAME
-git checkout - a master
+git checkout -a $UPM_BRANCH_NAME
+git checkout -a master
 git subtree split --prefix=Assets/Core --branch $UPM_BRANCH_NAME
 git tag $VERSION $UPM_BRANCH_NAME
 git push origin -f $UPM_BRANCH_NAME --tags
