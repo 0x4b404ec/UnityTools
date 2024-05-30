@@ -10,6 +10,8 @@ echo "==============================================================="
 
 git fetch origin
 
+git branch -r
+
 git push origin --delete $VERSION
 
 git checkout $UPM_BRANCH_NAME
