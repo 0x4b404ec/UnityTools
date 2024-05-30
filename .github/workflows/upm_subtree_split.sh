@@ -7,14 +7,7 @@ VERSION=$(echo $VERSION_JSON | grep -Eo $SEMVER_REG_EXP)
 echo $VERSION
 echo "==============================================================="
 
-git branch -r
-
 git fetch origin $UPM_BRANCH_NAME:$UPM_BRANCH_NAME
-
-git push origin --delete $VERSION
-
-git checkout $UPM_BRANCH_NAME
-git checkout master
 git subtree split --prefix=Assets/Core --branch $UPM_BRANCH_NAME
 git tag $VERSION $UPM_BRANCH_NAME
 git push origin -f $UPM_BRANCH_NAME --tags
