@@ -11,4 +11,4 @@ git gc
 git fetch origin $UPM_BRANCH_NAME:$UPM_BRANCH_NAME
 git subtree split --prefix=Assets/Core --branch $UPM_BRANCH_NAME
 git tag $VERSION $UPM_BRANCH_NAME
-git push origin -f ¥UPM_BRANCH_NAME --tags
+git push origin -f $UPM_BRANCH_NAME --tags
