@@ -8,6 +8,6 @@ echo $VERSION
 echo "==============================================================="
 
 git fetch origin $UPM_BRANCH_NAME:$UPM_BRANCH_NAME
-git subtree split --prefix=Assets/Core --branch $UPM_BRANCH_NAME
+git subtree split --prefix=Assets/Core --branch origin/$UPM_BRANCH_NAME
 git tag $VERSION origin/$UPM_BRANCH_NAME
 git push origin -f origin/$UPM_BRANCH_NAME --tags
