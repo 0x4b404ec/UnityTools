@@ -24,6 +24,19 @@ namespace Tests.Runtime.Tools
             public string key1;
             public int key2;
         }
+        
+        public void SaveBinary()
+        {
+            TestEn en = new TestEn()
+            {
+                key1 = "123",
+                key2 = 456
+            };
+
+            RRSaveLoadManager.Save(en, "RRSaveLoadTestBody", saveFileType: SaveFileTypeEnum.BINARY);
+        }
+
+        
         public void SaveJson()
         {
             TestEn en = new TestEn()
@@ -32,7 +45,7 @@ namespace Tests.Runtime.Tools
                 key2 = 456
             };
 
-            RRSaveLoadManager.Save(en, "RRSaveLoadTestBody", "RRSaveFolder", SaveFileTypeEnum.JSON);
+            RRSaveLoadManager.Save(en, "RRSaveLoadTestBody", saveFileType: SaveFileTypeEnum.JSON);
         }
      
         
