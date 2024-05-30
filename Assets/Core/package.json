@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "name": "com.0x4b404ec.tools",
+  "name": "com.0x4b404ec.toolkit",
   "displayName": "0x4b404ec Dev ToolKits",
   "description": "A UNITY development script package.",
   "unity": "2022.3",
