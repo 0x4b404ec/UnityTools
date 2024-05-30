@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Sample/GameObjectFocus/Demo.unity
+    guid: 64febcd50926f4ba5878e7765ca42f25
+  - enabled: 0
+    path: Assets/Samples~/InputCommon.unity
+    guid: 139996f336cbc4402a82f5fa72f18b42
   m_configObjects: {}

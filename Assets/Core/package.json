@@ -1,7 +1,7 @@
 {
   "version": "0.0.0",
   "name": "com.0x4b404ec.tools",  
-  "displayName": "0x4b404ec Dev tools",
+  "displayName": "0x4b404ec Dev Tools",
   "description": "A UNITY development script package.",
   "unity": "2022.3",
   "license": "MIT",
@@ -9,7 +9,6 @@
     "Utils"
   ],
   "author": {
-    "name": "0x4b404ec",
-    "email": "wongzq.dev@gmail.com"
+    "name": "0x4b404ec"  
   }
 }
