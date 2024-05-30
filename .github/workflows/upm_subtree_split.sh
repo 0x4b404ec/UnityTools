@@ -10,7 +10,7 @@ echo "==============================================================="
 git push origin --delete $VERSION
 
 git checkout -b $UPM_BRANCH_NAME
-git checkout -b master
+git checkout master
 git subtree split --prefix=Assets/Core --branch $UPM_BRANCH_NAME
 git tag $VERSION $UPM_BRANCH_NAME
 git push origin -f $UPM_BRANCH_NAME --tags
